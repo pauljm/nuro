@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6AB68DD421671C5300D9B981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB68DD321671C5300D9B981 /* AppDelegate.swift */; };
+		6AB68DD621671C5300D9B981 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB68DD521671C5300D9B981 /* ViewController.swift */; };
+		6AB68DD921671C5300D9B981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AB68DD721671C5300D9B981 /* Main.storyboard */; };
+		6AB68DDB21671C5500D9B981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AB68DDA21671C5500D9B981 /* Assets.xcassets */; };
+		6AB68DDE21671C5500D9B981 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AB68DDC21671C5500D9B981 /* LaunchScreen.storyboard */; };
+		6AB68DE921671C5500D9B981 /* NuroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB68DE821671C5500D9B981 /* NuroTests.swift */; };
+		6AB68DF421671C5500D9B981 /* NuroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB68DF321671C5500D9B981 /* NuroUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6AB68DE521671C5500D9B981 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AB68DC821671C5300D9B981 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AB68DCF21671C5300D9B981;
+			remoteInfo = Nuro;
+		};
+		6AB68DF021671C5500D9B981 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AB68DC821671C5300D9B981 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AB68DCF21671C5300D9B981;
+			remoteInfo = Nuro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6AB68DD021671C5300D9B981 /* Nuro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nuro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AB68DD321671C5300D9B981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6AB68DD521671C5300D9B981 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6AB68DD821671C5300D9B981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6AB68DDA21671C5500D9B981 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6AB68DDD21671C5500D9B981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6AB68DDF21671C5500D9B981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AB68DE421671C5500D9B981 /* NuroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NuroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AB68DE821671C5500D9B981 /* NuroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuroTests.swift; sourceTree = "<group>"; };
+		6AB68DEA21671C5500D9B981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AB68DEF21671C5500D9B981 /* NuroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NuroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AB68DF321671C5500D9B981 /* NuroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuroUITests.swift; sourceTree = "<group>"; };
+		6AB68DF521671C5500D9B981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6AB68DCD21671C5300D9B981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AB68DE121671C5500D9B981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AB68DEC21671C5500D9B981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6AB68DC721671C5300D9B981 = {
+			isa = PBXGroup;
+			children = (
+				6AB68DD221671C5300D9B981 /* Nuro */,
+				6AB68DE721671C5500D9B981 /* NuroTests */,
+				6AB68DF221671C5500D9B981 /* NuroUITests */,
+				6AB68DD121671C5300D9B981 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6AB68DD121671C5300D9B981 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6AB68DD021671C5300D9B981 /* Nuro.app */,
+				6AB68DE421671C5500D9B981 /* NuroTests.xctest */,
+				6AB68DEF21671C5500D9B981 /* NuroUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6AB68DD221671C5300D9B981 /* Nuro */ = {
+			isa = PBXGroup;
+			children = (
+				6AB68DD321671C5300D9B981 /* AppDelegate.swift */,
+				6AB68DD521671C5300D9B981 /* ViewController.swift */,
+				6AB68DD721671C5300D9B981 /* Main.storyboard */,
+				6AB68DDA21671C5500D9B981 /* Assets.xcassets */,
+				6AB68DDC21671C5500D9B981 /* LaunchScreen.storyboard */,
+				6AB68DDF21671C5500D9B981 /* Info.plist */,
+			);
+			path = Nuro;
+			sourceTree = "<group>";
+		};
+		6AB68DE721671C5500D9B981 /* NuroTests */ = {
+			isa = PBXGroup;
+			children = (
+				6AB68DE821671C5500D9B981 /* NuroTests.swift */,
+				6AB68DEA21671C5500D9B981 /* Info.plist */,
+			);
+			path = NuroTests;
+			sourceTree = "<group>";
+		};
+		6AB68DF221671C5500D9B981 /* NuroUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6AB68DF321671C5500D9B981 /* NuroUITests.swift */,
+				6AB68DF521671C5500D9B981 /* Info.plist */,
+			);
+			path = NuroUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6AB68DCF21671C5300D9B981 /* Nuro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AB68DF821671C5500D9B981 /* Build configuration list for PBXNativeTarget "Nuro" */;
+			buildPhases = (
+				6AB68DCC21671C5300D9B981 /* Sources */,
+				6AB68DCD21671C5300D9B981 /* Frameworks */,
+				6AB68DCE21671C5300D9B981 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nuro;
+			productName = Nuro;
+			productReference = 6AB68DD021671C5300D9B981 /* Nuro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6AB68DE321671C5500D9B981 /* NuroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AB68DFB21671C5500D9B981 /* Build configuration list for PBXNativeTarget "NuroTests" */;
+			buildPhases = (
+				6AB68DE021671C5500D9B981 /* Sources */,
+				6AB68DE121671C5500D9B981 /* Frameworks */,
+				6AB68DE221671C5500D9B981 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6AB68DE621671C5500D9B981 /* PBXTargetDependency */,
+			);
+			name = NuroTests;
+			productName = NuroTests;
+			productReference = 6AB68DE421671C5500D9B981 /* NuroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6AB68DEE21671C5500D9B981 /* NuroUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AB68DFE21671C5500D9B981 /* Build configuration list for PBXNativeTarget "NuroUITests" */;
+			buildPhases = (
+				6AB68DEB21671C5500D9B981 /* Sources */,
+				6AB68DEC21671C5500D9B981 /* Frameworks */,
+				6AB68DED21671C5500D9B981 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6AB68DF121671C5500D9B981 /* PBXTargetDependency */,
+			);
+			name = NuroUITests;
+			productName = NuroUITests;
+			productReference = 6AB68DEF21671C5500D9B981 /* NuroUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6AB68DC821671C5300D9B981 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Paul McReynolds";
+				TargetAttributes = {
+					6AB68DCF21671C5300D9B981 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					6AB68DE321671C5500D9B981 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 6AB68DCF21671C5300D9B981;
+					};
+					6AB68DEE21671C5500D9B981 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 6AB68DCF21671C5300D9B981;
+					};
+				};
+			};
+			buildConfigurationList = 6AB68DCB21671C5300D9B981 /* Build configuration list for PBXProject "Nuro" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6AB68DC721671C5300D9B981;
+			productRefGroup = 6AB68DD121671C5300D9B981 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6AB68DCF21671C5300D9B981 /* Nuro */,
+				6AB68DE321671C5500D9B981 /* NuroTests */,
+				6AB68DEE21671C5500D9B981 /* NuroUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6AB68DCE21671C5300D9B981 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AB68DDE21671C5500D9B981 /* LaunchScreen.storyboard in Resources */,
+				6AB68DDB21671C5500D9B981 /* Assets.xcassets in Resources */,
+				6AB68DD921671C5300D9B981 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AB68DE221671C5500D9B981 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AB68DED21671C5500D9B981 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6AB68DCC21671C5300D9B981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AB68DD621671C5300D9B981 /* ViewController.swift in Sources */,
+				6AB68DD421671C5300D9B981 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AB68DE021671C5500D9B981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AB68DE921671C5500D9B981 /* NuroTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AB68DEB21671C5500D9B981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AB68DF421671C5500D9B981 /* NuroUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6AB68DE621671C5500D9B981 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AB68DCF21671C5300D9B981 /* Nuro */;
+			targetProxy = 6AB68DE521671C5500D9B981 /* PBXContainerItemProxy */;
+		};
+		6AB68DF121671C5500D9B981 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AB68DCF21671C5300D9B981 /* Nuro */;
+			targetProxy = 6AB68DF021671C5500D9B981 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6AB68DD721671C5300D9B981 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AB68DD821671C5300D9B981 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6AB68DDC21671C5500D9B981 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AB68DDD21671C5500D9B981 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6AB68DF621671C5500D9B981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6AB68DF721671C5500D9B981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6AB68DF921671C5500D9B981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Nuro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pauljm.Nuro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6AB68DFA21671C5500D9B981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Nuro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pauljm.Nuro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6AB68DFC21671C5500D9B981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NuroTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pauljm.NuroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nuro.app/Nuro";
+			};
+			name = Debug;
+		};
+		6AB68DFD21671C5500D9B981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NuroTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pauljm.NuroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nuro.app/Nuro";
+			};
+			name = Release;
+		};
+		6AB68DFF21671C5500D9B981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NuroUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pauljm.NuroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nuro;
+			};
+			name = Debug;
+		};
+		6AB68E0021671C5500D9B981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NuroUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pauljm.NuroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nuro;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6AB68DCB21671C5300D9B981 /* Build configuration list for PBXProject "Nuro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AB68DF621671C5500D9B981 /* Debug */,
+				6AB68DF721671C5500D9B981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AB68DF821671C5500D9B981 /* Build configuration list for PBXNativeTarget "Nuro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AB68DF921671C5500D9B981 /* Debug */,
+				6AB68DFA21671C5500D9B981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AB68DFB21671C5500D9B981 /* Build configuration list for PBXNativeTarget "NuroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AB68DFC21671C5500D9B981 /* Debug */,
+				6AB68DFD21671C5500D9B981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AB68DFE21671C5500D9B981 /* Build configuration list for PBXNativeTarget "NuroUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AB68DFF21671C5500D9B981 /* Debug */,
+				6AB68E0021671C5500D9B981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6AB68DC821671C5300D9B981 /* Project object */;
+}
