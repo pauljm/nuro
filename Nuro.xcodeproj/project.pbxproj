@@ -14,6 +14,16 @@
 		6AB68DDE21671C5500D9B981 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AB68DDC21671C5500D9B981 /* LaunchScreen.storyboard */; };
 		6AB68DE921671C5500D9B981 /* NuroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB68DE821671C5500D9B981 /* NuroTests.swift */; };
 		6AB68DF421671C5500D9B981 /* NuroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB68DF321671C5500D9B981 /* NuroUITests.swift */; };
+		6AB68E4221672EE800D9B981 /* FaceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AB68E4121672EE800D9B981 /* FaceView.xib */; };
+		6AB68E4421672F9400D9B981 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB68E4321672F9400D9B981 /* FaceView.swift */; };
+		6AB68E4621694C7C00D9B981 /* NuroLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB68E4521694C7C00D9B981 /* NuroLayer.swift */; };
+		6AB68E4A21695CC900D9B981 /* NuroInputLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB68E4921695CC900D9B981 /* NuroInputLayer.swift */; };
+		6AB68E4C216B01DD00D9B981 /* NuroLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB68E4521694C7C00D9B981 /* NuroLayer.swift */; };
+		6AB68E4D216B01DF00D9B981 /* NuroInputLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB68E4921695CC900D9B981 /* NuroInputLayer.swift */; };
+		6AB68E4E216B01E200D9B981 /* NuroFullyConnectedLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB68E472169520B00D9B981 /* NuroFullyConnectedLayer.swift */; };
+		6AB68E512173C72E00D9B981 /* NuroFullyConnectedLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB68E472169520B00D9B981 /* NuroFullyConnectedLayer.swift */; };
+		6AB68E522173C73200D9B981 /* Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB68E4F2173B6BE00D9B981 /* Zip.swift */; };
+		6AB68E532173F66600D9B981 /* Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB68E4F2173B6BE00D9B981 /* Zip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +57,12 @@
 		6AB68DEF21671C5500D9B981 /* NuroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NuroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AB68DF321671C5500D9B981 /* NuroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuroUITests.swift; sourceTree = "<group>"; };
 		6AB68DF521671C5500D9B981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AB68E4121672EE800D9B981 /* FaceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FaceView.xib; sourceTree = "<group>"; };
+		6AB68E4321672F9400D9B981 /* FaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
+		6AB68E4521694C7C00D9B981 /* NuroLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuroLayer.swift; sourceTree = "<group>"; };
+		6AB68E472169520B00D9B981 /* NuroFullyConnectedLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuroFullyConnectedLayer.swift; sourceTree = "<group>"; };
+		6AB68E4921695CC900D9B981 /* NuroInputLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuroInputLayer.swift; sourceTree = "<group>"; };
+		6AB68E4F2173B6BE00D9B981 /* Zip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +115,12 @@
 			children = (
 				6AB68DD321671C5300D9B981 /* AppDelegate.swift */,
 				6AB68DD521671C5300D9B981 /* ViewController.swift */,
+				6AB68E4121672EE800D9B981 /* FaceView.xib */,
+				6AB68E4321672F9400D9B981 /* FaceView.swift */,
+				6AB68E4521694C7C00D9B981 /* NuroLayer.swift */,
+				6AB68E4921695CC900D9B981 /* NuroInputLayer.swift */,
+				6AB68E4F2173B6BE00D9B981 /* Zip.swift */,
+				6AB68E472169520B00D9B981 /* NuroFullyConnectedLayer.swift */,
 				6AB68DD721671C5300D9B981 /* Main.storyboard */,
 				6AB68DDA21671C5500D9B981 /* Assets.xcassets */,
 				6AB68DDC21671C5500D9B981 /* LaunchScreen.storyboard */,
@@ -232,6 +254,7 @@
 				6AB68DDE21671C5500D9B981 /* LaunchScreen.storyboard in Resources */,
 				6AB68DDB21671C5500D9B981 /* Assets.xcassets in Resources */,
 				6AB68DD921671C5300D9B981 /* Main.storyboard in Resources */,
+				6AB68E4221672EE800D9B981 /* FaceView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +279,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AB68E4A21695CC900D9B981 /* NuroInputLayer.swift in Sources */,
 				6AB68DD621671C5300D9B981 /* ViewController.swift in Sources */,
+				6AB68E512173C72E00D9B981 /* NuroFullyConnectedLayer.swift in Sources */,
 				6AB68DD421671C5300D9B981 /* AppDelegate.swift in Sources */,
+				6AB68E522173C73200D9B981 /* Zip.swift in Sources */,
+				6AB68E4421672F9400D9B981 /* FaceView.swift in Sources */,
+				6AB68E4621694C7C00D9B981 /* NuroLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +293,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AB68E4E216B01E200D9B981 /* NuroFullyConnectedLayer.swift in Sources */,
+				6AB68E4D216B01DF00D9B981 /* NuroInputLayer.swift in Sources */,
 				6AB68DE921671C5500D9B981 /* NuroTests.swift in Sources */,
+				6AB68E532173F66600D9B981 /* Zip.swift in Sources */,
+				6AB68E4C216B01DD00D9B981 /* NuroLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
