@@ -49,6 +49,7 @@ class NuroTests: XCTestCase {
 
     let biasTrainingFactor: Float = 0.1
     let agitation: Float = 1.0
+    let agitationPeriod: Int = 1 // So agitations can be changed without interpolating
     let rewardStrength: Float = 0.5
     // ∑(a^2) = 0.75^2 + 0.25^2 = 0.625
     // a / ∑(a^2) = [0.75 / 0.625, 0.25 / 0.625] = [1.2, 0.4]
@@ -75,7 +76,7 @@ class NuroTests: XCTestCase {
             activationFn: NuroTests.sigmoid,
             prev: first!,
             agitator: middleAgitator!,
-            agitationPeriod: 50,
+            agitationPeriod: agitationPeriod,
             biasTrainingFactor: biasTrainingFactor
         )
         last = NuroFullyConnectedLayer.init(
@@ -83,7 +84,7 @@ class NuroTests: XCTestCase {
             activationFn: NuroTests.sigmoid,
             prev: middle!,
             agitator: lastAgitator!,
-            agitationPeriod: 50,
+            agitationPeriod: agitationPeriod,
             biasTrainingFactor: biasTrainingFactor
         )
         
@@ -120,6 +121,22 @@ class NuroTests: XCTestCase {
             XCTAssertEqual(middleBiasesRounded, expectedLearnedMiddleBiasesRounded)
         } catch {
             XCTFail("\(error)")
+        }
+    }
+    
+    func testLearning() {
+        middleAgitator!.activation = -0.5 // Arbitrary
+        lastAgitator!.activation = 1.5 // Arbitrary
+        do {
+            let resultRounded = try last!.evaluate().map(NuroTests.round2)
+            try middle!.reward(strength: 1.0)
+            try last!.reward(strength: 1.0)
+            middleAgitator!.activation = 0.0
+            lastAgitator!.activation = 0.0
+            let secondResultRounded = try last!.evaluate().map(NuroTests.round2)
+            XCTAssertEqual(secondResultRounded, resultRounded)
+        } catch {
+            print("Error setting up network: \(error)")
         }
     }
 

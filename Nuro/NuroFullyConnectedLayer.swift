@@ -140,8 +140,10 @@ class NuroFullyConnectedLayer: NuroLayer {
 
         // Update biases. The rewarded hypothesis is apportioned between bias and input weights
         // according to the biasTrainingFactor.
+        var biasAdj: [Float] = []
         self.b = zip(b, h).map { (tuple: (Float, Float)) -> (Float) in
             let (bn, hn) = tuple
+            biasAdj.append(strength * biasTrainingFactor * hn)
             return bn + strength * biasTrainingFactor * hn
         }
         
@@ -149,17 +151,23 @@ class NuroFullyConnectedLayer: NuroLayer {
         // apportioned among input weights proportionally to their activation levels such that,
         // between adjustments to bias and weights, z is increased by h. Specifically:
         //
-        //   ∆w = c * h * a / ∑(a^2)
+        //   ∆wn = c • h • an / ∑(a^2)
         //
-        // Such that:
+        // For individual input neuron weight and activation wn and an, hypothesis h, input
+        // activations a, and constant c based on the reward strength and bias apportioning factor.
+        // Thus:
         //
-        //   ∑(a∆w) = c * h
+        //   ∑(an • ∆wn) = c • h
         //
-        // For a constant c related to reward strength and the bias training factor.
+        // When c = 1.0 (or when a lower value of c is combined with a complementary adjustment to
+        // biases), this adjustment to weights ensures that a future input activation vector equal
+        // to a will result in the same output activation absent h.
         let inputSumSq = aInput.reduce(0.0, { $0 + pow($1, 2) })
         let coeff = strength * (1.0 - biasTrainingFactor) / inputSumSq
+        var weightAdj: [[Float]] = []
         self.w = zip(w, h).map { (tuple: ([Float], Float)) -> [Float] in
             let (wn, hn) = tuple
+            weightAdj.append(aInput.map { coeff * pow($0, 2) * hn })
             return zip(wn, aInput).map { $0.0 + coeff * $0.1 * hn }
         }
     }
