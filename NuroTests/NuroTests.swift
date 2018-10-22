@@ -13,7 +13,6 @@ class NuroTests: XCTestCase {
     var middleAgitator: FixedAgitator?
     var lastAgitator: FixedAgitator?
 
-    var first: NuroInputLayer?
     var middle: NuroFullyConnectedLayer?
     var last: NuroFullyConnectedLayer?
 
@@ -70,26 +69,24 @@ class NuroTests: XCTestCase {
         middleAgitator = FixedAgitator.init(activation: 0.0)
         lastAgitator = FixedAgitator.init(activation: 0.0)
 
-        first = NuroInputLayer.init(size: 2)
         middle = NuroFullyConnectedLayer.init(
             size: middleWeights.count,
-            activationFn: NuroTests.sigmoid,
-            prev: first!,
+            activationFnVec: NuroMathAccelerate.shared.vSigmoid,
             agitator: middleAgitator!,
             agitationPeriod: agitationPeriod,
             biasTrainingFactor: biasTrainingFactor
         )
+        middle!.math = NuroMathAccelerate.shared
         last = NuroFullyConnectedLayer.init(
             size: lastWeights.count,
-            activationFn: NuroTests.sigmoid,
-            prev: middle!,
+            activationFnVec: NuroMathAccelerate.shared.vSigmoid,
             agitator: lastAgitator!,
             agitationPeriod: agitationPeriod,
             biasTrainingFactor: biasTrainingFactor
         )
+        last!.math = NuroMathAccelerate.shared
         
         do {
-            try first!.setActivations(inputs)
             try middle!.setWeights(middleWeights)
             try middle!.setBiases(middleBiases)
             try last!.setWeights(lastWeights)
@@ -101,9 +98,10 @@ class NuroTests: XCTestCase {
 
     func testEvaluate() {
         do {
-            let middleActivationsRounded = try middle!.evaluate().map(NuroTests.round2)
+            let middleActivations = try middle!.evaluate(inputs)
+            let middleActivationsRounded = middleActivations.map(NuroTests.round2)
             XCTAssertEqual(middleActivationsRounded, expectedMiddleActivationsRounded)
-            let lastActivationsRounded = try last!.evaluate().map(NuroTests.round2)
+            let lastActivationsRounded = try last!.evaluate(middleActivations).map(NuroTests.round2)
             XCTAssertEqual(lastActivationsRounded, expectedLastActivationsRounded)
         } catch {
             XCTFail("\(error)")
@@ -113,7 +111,7 @@ class NuroTests: XCTestCase {
     func testReward() {
         middleAgitator!.activation = agitation
         do {
-            _ = try middle!.evaluate().map(NuroTests.round2)
+            _ = try middle!.evaluate(inputs).map(NuroTests.round2)
             try middle!.reward(strength: rewardStrength)
             let middleWeightsRounded = middle!.w!.map { $0.map(NuroTests.round2) }
             XCTAssertEqual(middleWeightsRounded, expectedLearnedMiddleWeightsRounded)
@@ -128,30 +126,45 @@ class NuroTests: XCTestCase {
         middleAgitator!.activation = -0.5 // Arbitrary
         lastAgitator!.activation = 1.5 // Arbitrary
         do {
-            let resultRounded = try last!.evaluate().map(NuroTests.round2)
+            var middleActivations = try middle!.evaluate(inputs)
+            let resultRounded = try last!.evaluate(middleActivations).map(NuroTests.round2)
             try middle!.reward(strength: 1.0)
             try last!.reward(strength: 1.0)
             middleAgitator!.activation = 0.0
             lastAgitator!.activation = 0.0
-            let secondResultRounded = try last!.evaluate().map(NuroTests.round2)
+            middleActivations = try middle!.evaluate(inputs)
+            let secondResultRounded = try last!.evaluate(middleActivations).map(NuroTests.round2)
             XCTAssertEqual(secondResultRounded, resultRounded)
         } catch {
             print("Error setting up network: \(error)")
         }
     }
 
-    func testPerformanceExample() {
+    func testPerformance() {
         self.measure {
             do {
-                _ = try last!.evaluate()
+                let middleActivations = try middle!.evaluate(inputs)
+                _ = try last!.evaluate(middleActivations)
             } catch {
                 XCTFail("\(error)")
             }
         }
     }
     
-    static func sigmoid(x: Float) -> Float {
-        return 1 / (1 + exp(-x))
+    func testVvAddAccelerate() {
+        XCTAssertEqual(NuroMathAccelerate.shared.vvAdd(
+            /*   */ [0.26,  1.17, -0.05],
+            /* + */ [1.89, -0.76,  1.21]).map(NuroTests.round2),
+            /* = */ [2.15,  0.41,  1.16].map(NuroTests.round2)
+        )
+    }
+    
+    func testVsMultiplyAccelerate() {
+        XCTAssertEqual(NuroMathAccelerate.shared.vsMultiply(
+            /*   */ [0.26,  1.17, -0.05],
+            /* × */                0.50).map(NuroTests.round2),
+            /* = */ [0.13,  0.58, -0.03].map(NuroTests.round2)
+        )
     }
     
     static func round2(x: Float) -> Float {

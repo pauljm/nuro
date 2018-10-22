@@ -21,7 +21,7 @@ class NuroLayer {
         self.size = size
     }
     
-    func evaluate() throws -> [Float] {
+    func evaluate(_ i: [Float]) throws -> [Float] {
         throw NuroLayerError.notImplemented("evaluate")
     }
 }
